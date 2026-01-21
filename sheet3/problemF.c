@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main() {
+    int N;
+    scanf("%d", &N);  
+ 
+    long long A[N];   
+    for (int i = 0; i < N; i++) {
+        scanf("%lld", &A[i]);  
+    }
+ 
+    
+    for (int i = N - 1; i >= 0; i--) {
+        printf("%lld", A[i]);
+        if (i != 0) {
+            printf(" ");  
+        }
+    }
+    printf("\n");  
+ 
+    return 0;
+}
